@@ -1,0 +1,5 @@
+在push 本地仓库内容到远程前，需事先定义好gitignore文件内容，否则后期维护很麻烦
+但在eclipse中，需要在commit到本地仓库前就定义好gitignore内容，
+由于被ignore的内容会在commit时就被track了，所以在push到远程仓库前，再更改gitignore不起作用（除非使用命令:
+	git rm -r --cached .
+清除缓存）
